@@ -10,7 +10,7 @@ select * from pgj_alvarobregon
 union 
 select * from pgj_miguelhidalgo
 
---Crea in indice sobre la geometría
+--Crea un indice sobre la geometría
 create index incidentes_zmvm_gix on incidentes using GIST(geom);
 
 --Indentificar cuál es la columna de delitos y ver de que tipo hay
